@@ -1,3 +1,17 @@
+python 代码
+import undetected_chromedriver.v2 as uc
+import time
+if __name__ == '__main__':
+    options = uc.ChromeOptions()
+    options.add_argument('--start-maximized')
+    options.add_argument('--force-renderer-accessibility')
+    driver = uc.Chrome(options=options,browser_executable_path=r"C:\Program Files\Google\Chrome\Application\chrome.exe",suppress_welcome=False)
+    driver.get('https://www.baidu.com')  # known url using cloudflare's "under attack mode"
+    
+    time.sleep(100)
+    
+命令行代码
+ chrome.exe_path --start-maximized --force-renderer-accessibility --remote-debugging-host=127.0.0.1 --remote-debugging-port=53100 --user-data-dir="C:\Users\mahw\AppData\Local\Temp\tmp0l7qmu7e" --lang=zh-CN --log-level=0 --flag-switches-begin --flag-switches-end
 
 # undetected_chromedriver #
 
