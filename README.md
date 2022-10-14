@@ -10,7 +10,7 @@ if __name__ == '__main__':
     
     time.sleep(100)
     
-命令行代码
+命令行代码（命令行代码可以通过执行上面的代码 chrome://version中获取）
  chrome.exe_path --start-maximized --force-renderer-accessibility --remote-debugging-host=127.0.0.1 --remote-debugging-port=53100 --user-data-dir="C:\Users\mahw\AppData\Local\Temp\tmp0l7qmu7e" --lang=zh-CN --log-level=0 --flag-switches-begin --flag-switches-end
 
 # undetected_chromedriver #
